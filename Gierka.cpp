@@ -3,13 +3,17 @@
 #include "sceletonR.cpp"
 #include "vampireM.cpp"
 #include "boatB.cpp"
+#include "sceletonE.cpp"
+#include "drowning.cpp"
 using namespace std;
+list<string> game_art{sceletonF(),sceletonR(),sceletonE(),vampireM(),boatB(),drowning()}
 class player {
 public:
   string traveler = "";
   string weapon = "";
 };
 int choice;
+int boat;
 /*Początek gry*/
 int main(void) {
   cout << "********************************************************************"
@@ -56,14 +60,32 @@ int main(void) {
   for (int powtorzenie=0; powtorzenie<2;powtorzenie++){
     switch (choice) {
       case 1:
-        boatB();
+        for (int chamber=0; chamber<3;powtorzenie++){
+          int random = rand() % 3;
+            if (random == 0){
+              boatB();
+              cin>>boat;
+              if (boat==1){
+                int chance = rand() % 5;
+                  if (chance==0){
+                    drowning();
+                  }
+                  else{
+                    break;
+                  }
+              }
+              else {
+
+              }
+              
+              }
+            }
         choice=2;
         break;
-      case 2:
-        
+      default:
+        sceletonF();
         choice=1;
         break;
-  
     }
   }
-}
+};
