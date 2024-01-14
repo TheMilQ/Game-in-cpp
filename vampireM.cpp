@@ -1,4 +1,3 @@
- 
 #include <iostream>
 void vampireM() {
   std::cout<<"\n                   .d:....:h.\n"

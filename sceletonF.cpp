@@ -21,5 +21,4 @@ void sceletonF(){
                   "Wi.~!X$?!-~    : ?$$$B$Wu(+**$RM!\n"
                   "$R@i.~~ !     :   ~$$$$$B$$en:``\n"
                   "?MXT@Wx.~    :     ~+##*$$$$M~\n";
-  std::cout<<"\nYou lost :(.\n";
 }
