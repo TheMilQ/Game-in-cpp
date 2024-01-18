@@ -226,7 +226,7 @@ int main(void) {
                 }
               }
           }
-          else if (random==2){
+          else{
             priestE();
             cin>>priest;
               if (priest==1){
